@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "username": "sharkkii",
+    "pfp": "https://i.pinimg.com/736x/ba/92/7f/ba927ff34cd961ce2c184d47e8ead9f6.jpg",
+    "name": "sara",
+    "sign": "aries",
+    "pronouns": [
+      "she",
+      "her"
+    ],
+    "links": [
+      { 
+        "name": "twitter",
+        "url": "https://twitter.com/sharkkedy" 
+      },
+      { 
+        "name": "twitch",
+        "url": "https://twitch.tv/sharkked" 
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "username": "fucking idiot loser",
+    "pfp": "https://play-lh.googleusercontent.com/jkpabs01pnEU5Jc9U3MuWdwwoWi8v7x33RZNYyLP2T8a2j1csnjOy3_-KI6JU8JntlNW",
+    "name": "stanley",
+    "sign": "leo",
+    "pronouns": [
+      "he",
+      "him"
+    ]
+  }
+]
