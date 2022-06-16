@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { chatSay } from '@/ts/client/chat'
+import { chatSay } from '@/ts/chat'
 import ChatLine from './ChatLine.vue'
-import { useChatStore } from '@/ts/client/stores/ChatStore';
+import { useChatStore } from '@/ts/stores/ChatStore';
 const message = ref('')
 const chatStore = useChatStore()
 

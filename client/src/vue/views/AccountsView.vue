@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import UserCard from '../components/UserCard.vue'
-import { useUserStore } from '@/ts/client/stores/AccountStore'
+import UserCard from '@/vue/components/UserCard.vue'
+import { useUserStore } from '@/stores/AccountStore'
 const userStore = useUserStore()
 userStore.fill()
 </script>

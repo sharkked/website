@@ -1,5 +1,5 @@
 import { defineStore } from "pinia"
-import type { User } from "@/ts/common/types"
+import type { User } from "@common/types"
 
 export type UserState = {
   users: User[]
@@ -14,7 +14,7 @@ export const useUserStore = defineStore( "UserStore", {
 
   actions: {
     async fill() {
-      this.users = (await import("@/data/users.json")).default
+      this.users = (await import("../../data/users.json")).default
       let friends = "hi"
       friends ??= "cool"
     }

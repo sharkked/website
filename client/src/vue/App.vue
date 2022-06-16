@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { onBeforeUnmount } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
-import SocketioService from '@/ts/client/services/socketio.service'
-import { onChatMessage } from '@/ts/client/chat';
-import { useChatStore } from '@/ts/client/stores/ChatStore'
-import type { ChatMessage } from '@/ts/common/interfaces';
+import { RouterLink, RouterView } from "vue-router";
+import SocketioService from '@/ts/socketio.service'
+import { onChatMessage } from '@/ts/chat';
+import { useChatStore } from '@/ts/stores/ChatStore'
+import type { ChatMessage } from '@common/interfaces';
 SocketioService.setupSocketConnection()
 
 const chatStore = useChatStore()

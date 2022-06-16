@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ChatMessage } from '@/ts/common/interfaces';
+import type { ChatMessage } from '@common/interfaces';
 
 defineProps<{
   message: ChatMessage
