@@ -1,5 +1,5 @@
 import { defineStore } from "pinia"
-import type { ChatMessage } from "@/ts/common/interfaces"
+import type { ChatMessage } from "../../../common/interfaces"
 
 export type ChatState = {
   messages: ChatMessage[]

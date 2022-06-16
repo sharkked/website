@@ -1,4 +1,4 @@
-import { MessageType, type ChatMessage } from "../common/interfaces"
+import { MessageType, type ChatMessage } from "../../common/interfaces"
 import service from "./services/socketio.service"
 
 export function chatSay(user: string, message: string) {

@@ -4,11 +4,10 @@ import mongoose from 'mongoose'
 import session from 'express-session'
 import http from 'http'
 import { Server } from 'socket.io'
-import oauth from './oauth'
 import auth from  './routes/auth'
 import api from './routes/api'
 import config from './config'
-import logger, { httpLogger } from '../common/logger'
+import logger, { httpLogger } from './logger'
 import registerMessageHandlers, { serverMessage } from './chat'
 
 mongoose.connect(config.db, { })
@@ -23,6 +22,7 @@ const io = new Server(server, {
 })
 
 app.use(httpLogger)
+app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 app.use(session({ secret: 'keyboard cat', resave: false, saveUninitialized: false }))
 app.use(passport.initialize())

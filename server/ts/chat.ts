@@ -1,6 +1,6 @@
 import type { Server, Socket } from "socket.io";
-import logger from '../common/logger'
-import { MessageType, type ChatMessage } from "../common/interfaces";
+import logger from './logger'
+import { MessageType, type ChatMessage } from "@common/interfaces";
 
 export default (io: Server, socket: Socket) => {
   const createMessage = (msg: ChatMessage) => {

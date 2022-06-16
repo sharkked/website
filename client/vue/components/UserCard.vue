@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { User } from '@/ts/common/types'
+import type { User } from '@common/types'
 
 defineProps<{
   id: number,
