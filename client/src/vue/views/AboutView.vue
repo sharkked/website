@@ -1,18 +1,20 @@
 <script setup lang="ts">
+import Celebrate from "../components/Celebrate.vue";
 </script>
 
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+      <p>i am <Celebrate class="huge" msg="about"/> to kill you</p>
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.about {
+  margin: auto;
+  text-align: right;
+}
+
+.huge {
+  font-size: 10rem;
 }
 </style>

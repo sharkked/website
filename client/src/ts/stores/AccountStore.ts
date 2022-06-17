@@ -1,5 +1,5 @@
 import { defineStore } from "pinia"
-import type { User } from "@common/types"
+import type { User } from "../../../../common/types"
 
 export type UserState = {
   users: User[]

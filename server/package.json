@@ -1,8 +1,10 @@
 {
   "name": "sharkk-cafe-web",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV=dev && nodemon ts/server.ts",
+    "build": "yarn tsc",
     "trace": "tsc --traceResolution",
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },

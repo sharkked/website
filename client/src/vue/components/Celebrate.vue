@@ -13,5 +13,5 @@ defineProps<{
 </script>
 
 <template>
-  <h1 class="pink" @click="showConfetti">{{ msg }}</h1>
+  <span class="pink" @click="showConfetti">{{ msg }}</span>
 </template>

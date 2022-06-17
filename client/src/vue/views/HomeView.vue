@@ -2,9 +2,14 @@
 </script>
 
 <template>
-  <main>
-    <div class="home">
-      hello.
-    </div>
-  </main>
+  <div class="home">
+    🏠
+  </div>
 </template>
+
+<style>
+.home {
+  margin: auto;
+  justify-content: center;
+}
+</style>

@@ -5,6 +5,7 @@ import SocketioService from '@/ts/socketio.service'
 import { onChatMessage } from '@/ts/chat';
 import { useChatStore } from '@/ts/stores/ChatStore'
 import type { ChatMessage } from '@common/interfaces';
+
 SocketioService.setupSocketConnection()
 
 const chatStore = useChatStore()
@@ -29,7 +30,9 @@ onBeforeUnmount(() => {
       <RouterLink to="/chat">Chat</RouterLink>
     </nav>
   </header>
-  <RouterView class="main" />
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <style>
@@ -110,8 +113,9 @@ nav a:first-of-type {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-  .main {
+  main {
     display: flex;
+    width: 100%;
     min-height: calc(100vh - 2.5rem);
     padding-bottom: 2rem;
     align-items: center;

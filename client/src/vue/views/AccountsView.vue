@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import UserCard from '@/vue/components/UserCard.vue'
-import { useUserStore } from '@/stores/AccountStore'
+import { useUserStore } from '@/ts/stores/AccountStore'
 const userStore = useUserStore()
 userStore.fill()
 </script>
@@ -18,9 +18,9 @@ userStore.fill()
 <style>
 @media (min-width: 1024px) {
   .users {
+    width: 100%;
     display: flex;
-    place-items: left;
-    place-content: center;
+    place-items: center;
     flex-direction: column;
   }
 }
