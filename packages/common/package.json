@@ -1,0 +1,12 @@
+{
+  "name": "@cafe/common",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "yarn tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "composite": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "rootDir": ".",
+    "paths": {
+      "@/*": ["./*", ]
+    }
+  },
+  "include": ["src", "server.ts", "config.json"],
+  "exclude": ["node_modules", "dist"],
+  "references": [
+    {
+      "path": "../common"
+    }
+  ]
+}

@@ -1,8 +1,14 @@
 {
   "name": "cafe-coven",
-  "version": "1.0.0",
-  "repository": "https://github.com/sharkked/website.git",
-  "author": "sara",
-  "license": "MIT",
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "three": "^0.142.0"
+  }
 }
